@@ -1,18 +1,29 @@
-const POSTS = [
+const PRODUCTS = [
     {
-        id: "1234567890",
-        name: "Velocimarco",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt qui at velit, deserunt iusto laudantium iste, provident corrupti temporibus voluptatum, maxime tempora vero rerum quos esse rem. Omnis, quibusdam sit?",
-        tags: [
-            "Concordia - Betulia",
-            "Test"
-        ],
-        image: "./thumbnail.png"
+        id: '1',
+        code: '1',
+        name: 'Papa',
+        inventory: 15,
+        available: true
+    },
+    {
+        id: '2',
+        code: '2',
+        name: 'Platano',
+        inventory: 200,
+        available: true
+    },
+    {
+        id: '3',
+        code: '3',
+        name: 'Yuca',
+        inventory: 62,
+        available: false
     }
 ]
 
 export default {
     Query: {
-        posts: () => POSTS
+        products: () => PRODUCTS
     }
 }

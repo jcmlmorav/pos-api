@@ -1,16 +1,16 @@
 import { gql } from "apollo-server-express";
 
 const typeDefs = gql`
-    type Post {
+    type Product {
         id: ID!
+        code: String
         name: String
-        description: String
-        tags: [String]
-        image: String
+        inventory: Int
+        available: Boolean
     }
 
     type Query {
-        posts: [Post]
+        products: [Product]
     }
 `;
 

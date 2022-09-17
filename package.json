@@ -6,8 +6,8 @@
   "scripts": {
     "serve": "nodemon src/index.ts",
     "test": "test",
-    "lint": "eslint src/*",
-    "lint:fix": "eslint src/* --fix"
+    "lint": "eslint ./src/**/*",
+    "lint:fix": "eslint ./src/**/* --fix"
   },
   "repository": {
     "type": "git",

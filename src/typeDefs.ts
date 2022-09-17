@@ -1,4 +1,4 @@
-import { gql } from "apollo-server-express";
+import { gql } from 'apollo-server-express'
 
 const typeDefs = gql`
     type Product {
@@ -12,6 +12,6 @@ const typeDefs = gql`
     type Query {
         products: [Product]
     }
-`;
+`
 
-export default typeDefs;
+export default typeDefs
